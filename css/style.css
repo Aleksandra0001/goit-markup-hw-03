@@ -201,10 +201,19 @@ img {
     clip: rect(0 0 0 0);
 }
 
+.section-benefits{
+    padding: 120px 0;
+}
+
 .benefits-list{
     display: flex;
     margin-bottom: 126px;
     margin-top: 122px;
+    gap: 24px;
+}
+
+.about-item{
+    width: calc((100% - 72px) / 4);
 }
 
 .about-item-title{
@@ -214,6 +223,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     gap: 8px;
+    margin-bottom: 8px;
 }
 
 .about-item-description{
