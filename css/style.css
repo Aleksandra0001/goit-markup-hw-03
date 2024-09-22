@@ -1,7 +1,53 @@
+/* ===== COMPONENTS ===== */
 body{
     background-color: #FFFFFF;
     font-family:"Roboto", sans-serif; 
     color: #434455;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 15px;
+    /* border: 3px solid red; */
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
 }
 
 .logo-link{
@@ -11,6 +57,7 @@ body{
     line-height: 1.17;
     text-transform: uppercase;
     text-decoration: none;
+    /* border: 3px solid green; */
 }
 .logo-black{
     color: #2E2F42;
@@ -20,14 +67,27 @@ body{
     text-decoration: none;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
 .nav-list{
+    /* display: block; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    /* border: 3px solid green; */
+    display: inline-flex;
+    margin-right: 76px;
 }
 
 .nav-list li{
+
     letter-spacing: 0.02em;
+    padding: 24px;
 }
 
 .nav-list a:hover, .nav-list a:focus{
@@ -41,6 +101,14 @@ body{
 
 .address{
     font-style: normal;
+    display: inline-flex;
+    padding: 24px 0;
+    /* border: 3px solid green; */
+}
+
+.contact-list{
+    display: flex;
+    gap: 40px;
 }
 
 .contact-link{
@@ -56,16 +124,10 @@ body{
     color: #404bbf;
 }
 
-.hero-title{
-    color: #FFFFFF;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
-.portfolio-section-title, .our-team-title, .benefits-title{
+/* ===== MAIN ===== */
+.portfolio-section-title,
+.our-team-title,
+.benefits-title {
     color: #2E2F42;
     font-size: 36px;
     font-weight: 700;
@@ -75,7 +137,35 @@ body{
     text-transform: capitalize;
 }
 
-button{
+/* ===== HERO ===== */
+.hero {
+    background-color: #2E2F42;
+    width: 1440px;
+    height: 600px;
+}
+
+.hero-container{
+    padding-top: 186px;
+    padding-bottom: 290px;
+}
+
+.hero-title{
+    color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 48px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-order-service {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -83,11 +173,37 @@ button{
     color: #FFFFFF;
     cursor: pointer;
     letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover, button:focus {
+.button-order-service:hover,
+.button-order-service:focus {
     background-color: #404BBF;
     color: #FFFFFF;
+}
+
+/* ===== BENEFITS ===== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.benefits-list{
+    display: flex;
+    margin-bottom: 126px;
+    margin-top: 122px;
 }
 
 .about-item-title{
@@ -96,6 +212,7 @@ button:hover, button:focus {
     color:#2E2F42;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    gap: 8px;
 }
 
 .about-item-description{
@@ -104,21 +221,30 @@ button:hover, button:focus {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-right: 24px;
 }
 
-header{
-    background-color: #FFFFFF;
-    border: 1px solid #E7E9FC;
-    font-size: 18px;
-    font-weight: 700;
-}
+/* ===== OUR TEAM ===== */
 
 .our-team{
     background-color: #F4F4FD;
 }
 
-.our-team li{
+.our-team-title{
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.team-list{
+    display: flex;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.our-team .our-team-list{
     background-color: #FFFFFF;
+    margin-right: 24px;
 }
 
 .name{
@@ -135,8 +261,29 @@ header{
     letter-spacing: 0.02em;
 }
 
-.hero{
-  background-color: #2E2F42;  
+/* ===== PORTFOLIO ===== */
+
+.portfolio-section-title{
+    padding-top: 125px;
+    padding-bottom: 71px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    gap: 8px;
+}
+
+.portfolio-description{
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-photo{
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-item-title{
@@ -155,12 +302,13 @@ header{
     line-height: 1.5;
 }
 
-ul {
-    list-style: none;
-}
+/* ===== FOOTER ===== */
 
-footer{
+.footer{
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 
 footer .studio{
@@ -192,4 +340,5 @@ footer .studio{
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    max-width: 264px;
 }
