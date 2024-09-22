@@ -255,7 +255,7 @@ img {
     gap: 24px;
 }
 
-.our-team .our-team-list{
+.our-team-list{
     background-color: #FFFFFF;
     margin-right: 24px;
     border-radius: 0px 0px 4px 4px; 
@@ -300,7 +300,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 48px;
-    gap: 8px;
     column-gap: 24px;
 }
 
