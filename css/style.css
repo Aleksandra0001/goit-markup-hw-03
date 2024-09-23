@@ -71,26 +71,19 @@ img {
 
 .nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 50%;
 }
 
 .nav-list{
-    /* display: block; */
+    display: flex;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    /* border: 3px solid green; */
-    display: inline-flex;
-    margin-right: 76px;
     gap: 40px;
 }
 
 .nav-list li{
-
     letter-spacing: 0.02em;
-    padding: 24px;
 }
 
 .nav-list a:hover, .nav-list a:focus{
@@ -98,6 +91,7 @@ img {
 }
 
 .nav-list a{
+    display: block;
     color: #2E2F42;
     text-decoration: none;
     padding: 24px 0;
@@ -105,9 +99,6 @@ img {
 
 .address{
     font-style: normal;
-    display: inline-flex;
-    padding: 24px 0;
-    /* border: 3px solid green; */
 }
 
 .contact-list{
@@ -144,7 +135,8 @@ img {
 .hero {
     background-color: #2E2F42;
     width: 1440px;
-    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 188px 0;
 }
 
@@ -208,8 +200,6 @@ img {
 
 .benefits-list{
     display: flex;
-    margin-bottom: 126px;
-    margin-top: 122px;
     gap: 24px;
 }
 
@@ -233,7 +223,6 @@ img {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-right: 24px;
 }
 
 /* ===== OUR TEAM ===== */
@@ -276,7 +265,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
     text-align: center;
 }
 
